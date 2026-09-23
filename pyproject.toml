@@ -1,0 +1,15 @@
+[project]
+description = "This script calls apt and flatpak to determine if updates are pending and returns 'pending' or 'up-to-date' accordingly."
+name = "upgradeable-packages"
+version = "0.1.0"
+readme = "README.md"
+authors = [{ name = "James Carr" }]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+upgradeable-packages = "upgradeable_packages:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
